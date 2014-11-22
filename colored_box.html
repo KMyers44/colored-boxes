@@ -169,19 +169,6 @@
         </div>
 
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <script type="text/javascript">
-
-            $(document).ready(function () {
-
-                var randomColor = function () {
-                    return '#' + Math.floor(Math.random()*16777215).toString(16);
-                };
-
-                $('body').on('mouseenter', '.box', function(){
-                    $(this).css('background-color', randomColor());
-                });
-
-            })
-        </script>
+        <script type="text/javascript" src="colored_box.js"></script>
     </body>
 </html>
