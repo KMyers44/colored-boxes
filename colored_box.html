@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>Colored boxes</title>
+
+        <style>
+
+           body {
+               height: 100vh;
+               margin: 0 auto;
+               background-color: lightblue;
+           }
+
+           .main {
+               width: 976px;
+               height: 731px;
+               background-color: #dfdfdf;
+               margin: 40px auto;
+           }
+
+           .box {
+               height: 71px;
+               width: 73px;
+               border: 1px solid #eee;
+               float: left;
+           }
+
+           .box:hover {
+               box-shadow: 0px -1px 13px 5px rgb(174, 18, 18);
+           }
+
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+
+        </div>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function () {
+
+                var randomColor = function () {
+                    return '#' + Math.floor(Math.random()*16777215).toString(16);
+                };
+
+                $('body').on('mouseenter', '.box', function(){
+                    $(this).css('background-color', randomColor());
+                });
+
+            })
+        </script>
+    </body>
+</html>
